@@ -1,0 +1,1 @@
+# ca-odoo-ui-mockup
