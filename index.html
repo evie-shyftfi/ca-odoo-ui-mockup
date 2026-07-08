@@ -1725,7 +1725,7 @@ body {
                   <div class="o_contacts_group_header" onclick="toggleSection(this)">
                     <span class="o_section_arrow">▾</span>
                     <span class="o_section_label">Contact</span>
-                    <span class="o_section_count">2</span><button class="o_add_contact_btn" onclick="event.stopPropagation()">+ Add</button>
+                    <span class="o_section_count">2</span><button class="o_add_contact_btn" onclick="event.stopPropagation();showView('contact')">+ Add</button>
                   </div>
                   <div class="o_contacts_group_body">
                     <table class="o_contacts_list_table">
@@ -1780,7 +1780,7 @@ body {
                   <div class="o_contacts_group_header" onclick="toggleSection(this)">
                     <span class="o_section_arrow">▾</span>
                     <span class="o_section_label">Invoice Address</span>
-                    <span class="o_section_count">1</span><button class="o_add_contact_btn" onclick="event.stopPropagation()">+ Add</button>
+                    <span class="o_section_count">1</span><button class="o_add_contact_btn" onclick="event.stopPropagation();showView('contact')">+ Add</button>
                   </div>
                   <div class="o_contacts_group_body">
                     <table class="o_contacts_list_table">
@@ -1821,7 +1821,7 @@ body {
                   <div class="o_contacts_group_header" onclick="toggleSection(this)">
                     <span class="o_section_arrow">▸</span>
                     <span class="o_section_label">Delivery Address</span>
-                    <span class="o_section_count">0</span><button class="o_add_contact_btn" onclick="event.stopPropagation()">+ Add</button>
+                    <span class="o_section_count">0</span><button class="o_add_contact_btn" onclick="event.stopPropagation();showView('contact')">+ Add</button>
                   </div>
                   <div class="o_contacts_group_body" style="display:none;">
                     <table class="o_contacts_list_table">
@@ -2453,8 +2453,6 @@ body {
             </div>
             <div class="o_form_header_info">
               <div class="o_person_company_toggle">
-                <label class="o_radio_item selected"><input type="radio" name="con_ctype" checked> Person</label>
-              <span style="color:#dee2e6;margin:0 8px;">|</span>
               <label class="o_radio_item selected"><input type="radio" name="con_type" checked> Contact</label>
               <label class="o_radio_item"><input type="radio" name="con_type"> Invoice</label>
               <label class="o_radio_item"><input type="radio" name="con_type"> Delivery</label>
