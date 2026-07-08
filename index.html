@@ -2449,50 +2449,35 @@ body {
         <div class="o_form_sheet" style="margin-top:12px;">
           <div class="o_form_header">
             <div class="o_avatar_box">
-              <div class="o_avatar_placeholder" style="font-size:36px;background:#0288d122;">D</div>
+              <div class="o_avatar_placeholder" style="font-size:36px;background:#7b5ea722;">D</div>
             </div>
             <div class="o_form_header_info">
               <div class="o_person_company_toggle">
-                <label class="o_radio_item selected"><input type="radio" name="con_type" checked> Person</label>
-                <label class="o_radio_item"><input type="radio" name="con_type"> Company</label>
-                <span class="b b-std">STANDARD</span>
+                <label class="o_radio_item selected"><input type="radio" name="con_ctype" checked> Person</label>
+              <span style="color:#dee2e6;margin:0 8px;">|</span>
+              <label class="o_radio_item selected"><input type="radio" name="con_type" checked> Contact</label>
+              <label class="o_radio_item"><input type="radio" name="con_type"> Invoice</label>
+              <label class="o_radio_item"><input type="radio" name="con_type"> Delivery</label>
+              <label class="o_radio_item"><input type="radio" name="con_type"> Other</label>
               </div>
-              <input class="o_company_name" value="Don Brown" placeholder="Contact Name...">
-              <div class="o_contact_inline">
-                <div class="o_contact_line">
-                  <span class="o_icon">🏢</span>
-                  <input value="Don's Appliances" style="color:var(--o-tab-inactive);">
-                  <span class="b b-std">parent_id</span>
-                </div>
-                <div class="o_contact_line">
-                  <span class="o_icon">✉</span>
-                  <input value="don@donsappliances.com">
-                  <span class="b b-std">STANDARD</span>
-                </div>
-                <div class="o_contact_line">
-                  <span class="o_icon">📞</span>
-                  <input value="(412) 555-0192">
-                  <span class="b b-std">STANDARD</span>
-                </div>
-                <div class="o_contact_line">
-                  <span class="o_icon">📱</span>
-                  <input value="(412) 555-0199">
-                  <span class="b b-std">STANDARD</span>
-                </div>
+              <div style="display:flex;align-items:center;gap:8px;margin:2px 0;">
+                <select style="max-width:70px;padding:2px 4px;border:1px solid var(--o-border);border-radius:4px;color:var(--o-body-color);"><option selected>&nbsp;</option><option>Mr.</option><option>Ms.</option><option>Mrs.</option><option>Dr.</option><option>Prof.</option></select>
+                <input class="o_company_name" value="Don Brown" placeholder="Contact Name...">
               </div>
+              <div style="color:#6c757d;font-size:13px;margin-bottom:4px;">Owner at <span style="color:var(--o-link);">Don's Appliances</span></div>
+              <div><span class="o_tag_green">Active</span></div>
             </div>
           </div>
           <div class="o_field_rows">
-            <div class="o_field_row">
-              <div class="o_form_label">Job Title</div>
-              <div class="o_field_value"><input value="Owner"></div>
-              <div class="o_field_badges"><span class="b b-std">STANDARD</span></div>
-            </div>
-            <div class="o_field_row">
-              <div class="o_form_label">AVB Contact ID</div>
-              <div class="o_field_value">AVBC-20091</div>
-              <div class="o_field_badges"><span class="b b-in">IN ODOO</span></div>
-            </div>
+            <div class="o_field_row"><div class="o_form_label">Email</div><div class="o_field_value"><input value="don@donsappliances.com"></div><div class="o_field_badges"></div></div>
+            <div class="o_field_row"><div class="o_form_label">Account Name</div><div class="o_field_value"><span style="color:var(--o-link);">Don's Appliances</span></div><div class="o_field_badges"></div></div>
+            <div class="o_field_row"><div class="o_form_label">Phone</div><div class="o_field_value"><input value="(412) 555-0192"></div><div class="o_field_badges"></div></div>
+            <div class="o_field_row"><div class="o_form_label">Tags</div><div class="o_field_value o_placeholder">—</div><div class="o_field_badges"></div></div>
+            <div class="o_field_row"><div class="o_form_label">Mobile</div><div class="o_field_value"><input value="(412) 555-0199"></div><div class="o_field_badges"></div></div>
+            <div class="o_field_row"><div class="o_form_label">Currency</div><div class="o_field_value">USD ($)</div><div class="o_field_badges"></div></div>
+            <div class="o_field_row"><div class="o_form_label">Job Title</div><div class="o_field_value"><input value="Owner"></div><div class="o_field_badges"></div></div>
+            <div class="o_field_row"><div class="o_form_label">AVB Contact ID</div><div class="o_field_value">AVBC-20091</div><div class="o_field_badges"></div></div>
+            <div class="o_field_row span-full"><div class="o_form_label">Notes</div><div class="o_field_value"><input placeholder="Internal notes..." style="width:100%;"></div><div class="o_field_badges"></div></div>
           </div>
 
           <div class="o_notebook">
