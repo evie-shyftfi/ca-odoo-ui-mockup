@@ -1112,6 +1112,7 @@ body {
   font-weight: 700; font-size: 12px; color: white;
 }
 .o_hier_co_name { font-weight: 600; color: var(--o-body-color); flex: 1; cursor: pointer; }
+.o_co_count { display:inline-flex; align-items:center; justify-content:center; min-width:20px; height:20px; padding:0 5px; margin-left:8px; border:1px solid #b7b7c9; border-radius:10px; font-size:11px; font-weight:600; color:#5a5a6e; }
 .o_hier_co_name:hover { color: var(--o-navbar-bg); text-decoration: underline; }
 
 /* Type group row */
@@ -1314,7 +1315,7 @@ body {
             <div class="o_td_inner">
               <button class="o_expand_btn" onclick="toggleHier('co1')">▾</button>
               <div class="o_hier_co_avatar" style="background:#2e7d32;">D</div>
-              <span class="o_hier_co_name" onclick="showView('account')">Don's Appliances</span>
+              <span class="o_hier_co_name" onclick="showView('account')">Don's Appliances</span><span class="o_co_count" title="Total related records">3</span>
             </div>
           </td>
           <td><div class="o_td_inner"><span class="o_avb_id_cell">AVB-10042</span></div></td>
@@ -1388,7 +1389,7 @@ body {
             <div class="o_td_inner">
               <button class="o_expand_btn" onclick="toggleHier('co2')">▾</button>
               <div class="o_hier_co_avatar" style="background:#1565c0;">9</div>
-              <span class="o_hier_co_name">[9STOR] - 0156 CUBESMART CA ANAHEIM S ANAHEIM WAY</span>
+              <span class="o_hier_co_name">[9STOR] - 0156 CUBESMART CA ANAHEIM S ANAHEIM WAY</span><span class="o_co_count" title="Total related records">0</span>
             </div>
           </td>
           <td><div class="o_td_inner"><span class="o_avb_id_cell">AVB-0156</span></div></td>
@@ -1417,7 +1418,7 @@ body {
             <div class="o_td_inner">
               <button class="o_expand_btn" onclick="toggleHier('co3')">▸</button>
               <div class="o_hier_co_avatar" style="background:#7b5ea7;">M</div>
-              <span class="o_hier_co_name">Metro Appliances &amp; More</span>
+              <span class="o_hier_co_name">Metro Appliances &amp; More</span><span class="o_co_count" title="Total related records">1</span>
             </div>
           </td>
           <td><div class="o_td_inner"><span class="o_avb_id_cell" style="color:#adb5bd;">—</span></div></td>
